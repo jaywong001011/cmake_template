@@ -1,0 +1,6 @@
+{
+global:
+    shared_library_say;
+local:
+	*;
+};
