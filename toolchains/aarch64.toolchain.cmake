@@ -1,0 +1,7 @@
+SET(CMAKE_SYSTEM_NAME              Linux)
+SET(CMAKE_SYSTEM_PROCESSOR         aarch64)
+SET(CMAKE_SYSROOT                  /opt/gcc-linaro-5.4.1-2017.05-x86_64_aarch64-linux-gnu/aarch64-linux-gnu/libc)
+SET(CMAKE_C_COMPILER               /opt/gcc-linaro-5.4.1-2017.05-x86_64_aarch64-linux-gnu/bin/aarch64-linux-gnu-gcc)
+SET(CMAKE_CXX_COMPILER             /opt/gcc-linaro-5.4.1-2017.05-x86_64_aarch64-linux-gnu/bin/aarch64-linux-gnu-g++)
+SET(CMAKE_CXX_FLAGS_DEBUG          "${CMAKE_CXX_FLAGS_DEBUG} -O0 -Wall -ggdb")
+SET(ARM                            TRUE)
