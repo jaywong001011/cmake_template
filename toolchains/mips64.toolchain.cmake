@@ -1,0 +1,8 @@
+SET(CMAKE_SYSTEM_NAME              Linux)
+SET(CMAKE_SYSTEM_PROCESSOR         mips64)
+SET(CMAKE_SYSROOT                  $ENV{CROSS_COMPILE_SYSROOT})
+SET(CMAKE_C_COMPILER               $ENV{CROSS_COMPILE_ROOT}/bin/$ENV{CROSS_COMPILE}gcc)
+SET(CMAKE_CXX_COMPILER             $ENV{CROSS_COMPILE_ROOT}/bin/$ENV{CROSS_COMPILE}g++)
+SET(CMAKE_CXX_FLAGS_DEBUG          "${CMAKE_CXX_FLAGS_DEBUG} -O0 -Wall -ggdb")
+SET(CMAKE_C_FLAGS                  "-mabi=64 -march=mips64")
+SET(CMAKE_CXX_FLAGS                "-mabi=64 -march=mips64")
