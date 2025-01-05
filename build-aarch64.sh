@@ -1,6 +1,7 @@
 #!/bin/bash
-PREFIX=aarch64-linux-gnu
-export CROSS_COMPILE=$PREFIX-
+export CROSS_COMPILE_ROOT=/opt/gcc-linaro-5.4.1-2017.05-x86_64_aarch64-linux-gnu
+export CROSS_COMPILE_SYSROOT=$CROSS_COMPILE_ROOT/aarch64-linux-gnu/libc
+export CROSS_COMPILE=aarch64-linux-gnu-
 
 # =============== Set some local variables here. ===============
 # You can change the name of build directory here:
